@@ -7,6 +7,8 @@
     <p>- vue로 제작되었습니다. -</p>
   </main>
 
+  <router-view></router-view>
+
   <BlogList :blogdata="blogdata" />
 </template>
 
