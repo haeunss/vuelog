@@ -1,9 +1,11 @@
 <template>
   <div class="list_wrap">
-    <div>
-      <h4>{{ blogdata[0].title }}</h4>
-      <p>{{ blogdata[0].date }}</p>
-    </div>
+    <router-link to="/BlogListDetail/0">
+      <div>
+        <h4>{{ blogdata[0].title }}</h4>
+        <p>{{ blogdata[0].date }}</p>
+      </div>
+    </router-link>
     <div>
       <h4>{{ blogdata[1].title }}</h4>
       <p>{{ blogdata[1].date }}</p>
@@ -29,9 +31,9 @@ export default {
 </script>
 
 <style>
-  .list_wrap > div{
+  .list_wrap > div,.list_wrap > a > div{
     border-bottom: 1px solid #eee;
-    margin: 30px;
-    padding-bottom: 15px;
+    margin: 40px 150px;
+    padding-bottom: 25px;
   }
 </style>
