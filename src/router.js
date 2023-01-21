@@ -3,11 +3,17 @@ import BlogList from './components/BlogList.vue'
 import BlogHome from './components/BlogHome.vue'
 import BlogListDetail from './components/BlogListDetail.vue'
 import NotFound from './components/NotFound.vue'
+// import BlogAuthor from './components/BlogAuthor.vue'
+import BlogComment from './components/BlogComment.vue'
 
 const routes = [
   {
     path: "/BlogListDetail/:id",
-    component: BlogListDetail,
+    components: {
+      default: BlogListDetail,
+      // BlogAuthor,
+      BlogComment,
+    }
   },
   {
     path: "/BlogList",

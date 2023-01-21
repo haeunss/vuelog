@@ -1,17 +1,17 @@
 <template>
   <div class="list_wrap">
-    <router-link to="/BlogListDetail/0">
+    <!-- <router-link to="/BlogListDetail/0"> -->
       <div>
-        <h4>{{ blogdata[0].title }}</h4>
+        <h4 @click="$router.push('/BlogListDetail/0')">{{ blogdata[0].title }}</h4>
         <p>{{ blogdata[0].date }}</p>
       </div>
-    </router-link>
+    <!-- </router-link> -->
     <div>
-      <h4>{{ blogdata[1].title }}</h4>
+      <h4 @click="$router.push('/BlogListDetail/1')">{{ blogdata[1].title }}</h4>
       <p>{{ blogdata[1].date }}</p>
     </div>
     <div>
-      <h4>{{ blogdata[2].title }}</h4>
+      <h4 @click="$router.push('/BlogListDetail/2')">{{ blogdata[2].title }}</h4>
       <p>{{ blogdata[2].date }}</p>
     </div>
   </div>
